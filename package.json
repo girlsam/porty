@@ -1,0 +1,27 @@
+{
+  "description": "Portfolio",
+  "license": "ISC",
+  "name": "porty",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.6.0",
+    "eslint": "^7.3.1",
+    "sass": "^1.26.9",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "lint": "eslint . --ext .js",
+    "start": "webpack-dev-server --open --mode development",
+    "test": "echo \"No test specified\""
+  }
+}
