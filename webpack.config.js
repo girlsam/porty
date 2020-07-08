@@ -17,17 +17,21 @@ module.exports = {
         test: /\.scss$/,
         use: [
           'style-loader',
-          'css-loader', 
+          'css-loader',
           {
             loader: 'sass-loader',
             options: {
               implementation: require('sass'),
               // override node-sass to use dart
-            }
-          }
-        ]
-      }
-    ]
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: ['file-loader'],
+      },
+    ],
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
@@ -35,6 +39,6 @@ module.exports = {
     port: 8080,
     publicPath: '/',
     hot: true,
-    host: '0.0.0.0'
+    host: '0.0.0.0',
   },
 };

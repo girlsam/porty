@@ -4,9 +4,9 @@
 
 body {
   background-color: variables.$accent-set-color;
+  font-family: variables.$roboto-slab;
 
   div {
     color: variables.$primary-color;
-    font-family: variables.$roboto-slab;
   }
 }
